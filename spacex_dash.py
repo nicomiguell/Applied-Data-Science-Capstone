@@ -3,7 +3,6 @@ from dash import dcc, html, Input, Output
 import plotly.express as px
 import pandas as pd
 
-# Simulo tu DataFrame spacex_df y launch_sites_df para ejemplo
 spacex_df = pd.read_csv('spacex_launch_dash.csv')  # Usa tu DataFrame real aquí
 launch_sites_df = pd.DataFrame({
     'Launch Site': ['CCAFS LC-40', 'CCAFS SLC-40', 'KSC LC-39A', 'VAFB SLC-4E'],
@@ -11,7 +10,6 @@ launch_sites_df = pd.DataFrame({
     'Long': [-80.577356, -80.576820, -80.646895, -120.610745]
 })
 
-# Defino min y max payload basados en datos
 min_payload = spacex_df['Payload Mass (kg)'].min()
 max_payload = spacex_df['Payload Mass (kg)'].max()
 
@@ -102,5 +100,5 @@ def update_scatter_plot(selected_site, payload_range):
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8051)
+    app.run(debug=True)
 
