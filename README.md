@@ -1,4 +1,4 @@
-# SpaceX Casptone
+# SpaceX Capstone
 
 ## Description
 This project is part of the IBM Data Science Professional Certificate. The goal is to predict whether the first stage of the Falcon 9 rocket will successfully land. We used public SpaceX launch data, applied data cleaning, exploratory analysis, and machine learning techniques.
